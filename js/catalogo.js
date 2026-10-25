@@ -34,6 +34,27 @@ const HERRAMIENTAS = [
       }
     ]
   },
+    {
+    id: 'rotar',
+    titulo: 'Rotar PDF',
+    descripcion: 'Gira todas las páginas del documento.',
+    icono: '⟳',
+    multiples: false,
+    minimo: 1,
+    boton: 'Rotar PDF',
+    opciones: [
+      {
+        tipo: 'eleccion',
+        nombre: 'angulo',
+        etiqueta: 'Ángulo',
+        valores: [
+          { valor: '90', etiqueta: '90° a la derecha', elegido: true },
+          { valor: '180', etiqueta: '180°' },
+          { valor: '270', etiqueta: '90° a la izquierda' }
+        ]
+      }
+    ]
+  },
   {
     id: 'comprimir',
     titulo: 'Comprimir PDF',
